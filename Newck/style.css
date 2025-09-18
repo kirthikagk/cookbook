@@ -1,0 +1,167 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #f5a623;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.search input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  background: #f9f9f9;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.primary {
+  background: #f5a623;
+  color: white;
+}
+
+.secondary {
+  background: #eee;
+}
+
+/* Explore Section */
+.explore {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.explore h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categories button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Recipes Section */
+.recipes {
+  padding: 60px 0;
+  background: #fdfdfd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.recipe-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px;
+  text-align: center;
+}
+
+.recipe-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}

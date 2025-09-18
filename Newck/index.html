@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLAVORIZ - Food Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo">FLAV<span class="highlight">ORIZ</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search recipes..." />
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Adventure of <span class="highlight">Delicacies</span></h2>
+        <p>Unlock a world of culinary recipes and unleash your inner chef the easy way with Flavoriz.</p>
+        <div class="hero-buttons">
+          <button class="btn primary">Explore Recipes</button>
+          <button class="btn secondary">Get Our Mobile App</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic1.jpg" alt="Delicious food" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Filters -->
+  <section class="explore">
+    <div class="container">
+      <h2>Explore <span class="highlight">Culinary Insights</span></h2>
+      <div class="categories">
+        <button onclick="filterRecipes('all')">All</button>
+        <button onclick="filterRecipes('salad')">Salad</button>
+        <button onclick="filterRecipes('Meat')">Meat</button>
+        <button onclick="filterRecipes('korean')">Korean</button>
+        <button onclick="filterRecipes('South Indian')">South Indian</button>
+        <button onclick="filterRecipes('North Indian')">North Indian</button>
+        <button onclick="filterRecipes('Snacks')">Snacks</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="recipes">
+      <div class="container grid" id="recipeGrid">
+      <div class="recipe-card" data-category="Meat">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic2.jpg" alt="Meat" />
+        <h3>Barque with Tahini Sauce</h3>
+        <p>250+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="korean">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic3.jpg" alt="korean" />
+        <h3>Chili corn with cheese pizza</h3>
+        <p>150+ saves</p>
+            </div>
+      <div class="recipe-card" data-category="korean">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic4.jpg" alt="Korean" />
+        <h3>Sour & Spicy Korean Kimchi</h3>
+        <p>50+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Snacks">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic5.jpg" alt="snacks" />
+        <h3>Pancakes</h3>
+        <p>140+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Snacks">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic6.jpg" alt="Snacks" />
+        <h3>coffee with Waffles</h3>
+        <p>100+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Meat">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic7.jpg" alt="Meat" />
+        <h3>Special Salad with Grill Chicken</h3>
+        <p>20+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Korean">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic8.jpg" alt="Korean"/>
+        <p>80+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Snacks">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic10.jpg" alt="Snacks" />
+        <h3>Desserts</h3>
+        <p>40+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Snacks">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic12.jpg" alt="Snacks" />
+        <h3>Icecream Cakes</h3>
+        <p>25+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Korean">
+        <img src="c:\Users\Admin\OneDrive\Pictures\pic13.jpg" alt="Korean" />
+        <h3>Special Dinner</h3>
+        <p>20+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="South Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\si1.jpg" alt="South Indian" />
+        <h3>special set breakfast</h3>
+        <p>298+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="South Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\si2.jpg" alt="South Indian" />
+        <h3>Special Idly</h3>
+        <p>265+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="South Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\si3.jpg" alt="South Indian" />
+        <h3>Special meal</h3>
+        <p>20+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="South Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\si4.jpg" alt="South Indian" />
+        <h3>Special kerala lunch</h3>
+        <p>200+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="North Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\ni1.jpg" alt="North Indian" />
+        <h3>Special naan & chicken gravy</h3>
+        <p>200+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="North Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\ni2.jpg" alt="North Indian" />
+        <h3>Special North indian meals</h3>
+        <p>270+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="North Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\ni3.jpg" alt="North Indian" />
+        <h3>Special Dinner</h3>
+        <p>205+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="North Indian">
+        <img src="c:\Users\Admin\OneDrive\Pictures\ni4.jpg" alt="North Indian" />
+        <h3>Special naan with meals</h3>
+        <p>25+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="Salad">
+        <img src="c:\Users\Admin\OneDrive\Pictures\s1.jpg" alt="salad" />
+        <h3>Special fruit Salad</h3>
+        <p>250+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="salad">
+        <img src="c:\Users\Admin\OneDrive\Pictures\s2.jpg" alt="salad" />
+        <h3>cheese corn Salad</h3>
+        <p>255+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="salad">
+        <img src="c:\Users\Admin\OneDrive\Pictures\s3.jpg" alt="salad" />
+        <h3>panner Salad</h3>
+        <p>275+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="salad">
+        <img src="c:\Users\Admin\OneDrive\Pictures\s4.jpg" alt="salad" />
+        <h3>sweety pepper Salad</h3>
+        <p>225+ saves</p>
+      </div>
+      <div class="recipe-card" data-category="salad">
+        <img src="c:\Users\Admin\OneDrive\Pictures\s5.jpg" alt="salad" />
+        <h3>cabbage special Salad</h3>
+        <p>285+ saves</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 FLAVORIZ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
